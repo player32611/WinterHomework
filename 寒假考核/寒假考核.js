@@ -233,9 +233,6 @@ function ClickSearchButtom() {
                     </div>
                 </div>`
             }
-
-
-
             const searchResultPlaylistsPlaylists = document.getElementById('search-result-playlists-playlists')
             searchResultPlaylistsPlaylists.innerHTML = ``
             for (i = 0; i < data.result.playlists.length; i++) {
@@ -253,9 +250,6 @@ function ClickSearchButtom() {
                     </div>
                     `
             }
-
-
-
             const playlists = document.querySelectorAll('.playlist')
             playlists.forEach(playlist => {
                 playlist.addEventListener('click', function () {
@@ -348,9 +342,6 @@ function ClickSearchButtom() {
                         })
                 })
             })
-
-
-
             const searchResultPlaylistsPlaylistsPlaylist = document.querySelectorAll('#search-result-playlists-playlists-playlist')
             searchResultPlaylistsPlaylistsPlaylist.forEach(playlist => {
                 playlist.addEventListener('click', function () {
@@ -436,8 +427,6 @@ function ClickSearchButtom() {
                         })
                 })
             })
-
-
         })
 }
 headSearchSearchbuttom.addEventListener("click", function () {
@@ -488,9 +477,6 @@ headSearchSearchbuttom.addEventListener("click", function () {
                     <div id="search-result-all-songs-songs-song-songauthor">${data.result.songs[i].ar[0].name}</div>
                 </div>`
                 }
-
-
-
                 const searchResultSongsSongs = document.getElementById('search-result-songs-songs')
                 searchResultSongsSongs.innerHTML = ``
                 for (i = 0; i < data.result.songs.length; i++) {
@@ -509,8 +495,6 @@ headSearchSearchbuttom.addEventListener("click", function () {
                     <div id="search-result-songs-songs-song-long">${time}</div>
                 </div>`
                 }
-
-
                 const searchResultAllSongsSongsSongs = document.querySelectorAll('#search-result-all-songs-songs-song')
                 searchResultAllSongsSongsSongs.forEach(searchResultAllSongsSongsSong => {
                     searchResultAllSongsSongsSong.addEventListener('click', function () {
@@ -551,9 +535,6 @@ headSearchSearchbuttom.addEventListener("click", function () {
                             })
                     })
                 })
-
-
-
                 const searchResultSongsSongsSong = document.querySelectorAll('#search-result-songs-songs-song')
                 searchResultSongsSongsSong.forEach(onesearchResultSongsSongsSong => {
                     onesearchResultSongsSongsSong.addEventListener('click', function () {
@@ -2360,16 +2341,10 @@ function updateLyrics() {
     }// 检测用户是否停止滚动
     requestAnimationFrame(updateLyrics)
 }
-// 开始更新歌词
-requestAnimationFrame(updateLyrics)
-
-
+requestAnimationFrame(updateLyrics)// 开始更新歌词
 //loadSong(currentSongIndex)// 初始加载第一首歌
 updateVolumeDisplay() // 初始化音量显示
 stopRotate()
-
-
-
 
 
 
