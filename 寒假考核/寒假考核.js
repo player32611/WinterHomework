@@ -3,13 +3,13 @@ const uid = `4919121947`
 //搜索
 const headSearchSearchbar = document.getElementById('head-search-searchbar')
 fetch(`http://localhost:3000/search/default`, {
-    method: 'GET',
+    method: 'GET'
 })
     .then((res) => {
         if (!res.ok) {
-            throw new Error(`请求失败，状态码: ${res.status}`);
+            throw new Error(`请求失败，状态码: ${res.status}`)
         }
-        return res.json();
+        return res.json()
     })
     .then((data) => {
         headSearchSearchbar.placeholder = data.data.showKeyword
@@ -26,7 +26,7 @@ function handleClickOutside(event) {
     }
 }//移除热搜榜
 fetch(`http://localhost:3000/search/hot/detail`, {
-    method: 'GET',
+    method: 'GET'
 })
     .then((res) => {
         if (!res.ok) {
